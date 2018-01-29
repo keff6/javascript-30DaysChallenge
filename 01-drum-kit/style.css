@@ -1,13 +1,67 @@
 html {
-  font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
-  background-size: cover;
+  font-size: 10px;  
 }
+
 body,html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  width: 100%;
+  display: flex;
 }
+
+/* PANEL STYLES  */
+.left-panel{
+  width: 40%;
+  height: vh;
+  display: none;
+  padding: 20px 1rem 0 1rem;
+  background-color: #1f437c;
+  color: #fff;
+}
+
+.left-panel a{
+  border: 1px grey solid;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 17px;
+  color: black;
+  background-color: #b8d4f5;
+}
+
+.left-panel a:hover,
+.left-panel a:active{
+  border: 1px grey solid;
+  border-radius: 5px;  
+  color: white;
+  background-color: rgba(18, 97, 132, 0.33);
+}
+
+.show{
+  display: inline;
+}
+
+.main-panel{
+  width: 100%;
+  background: url(http://www.4usky.com/data/out/29/164244963-drums-wallpapers.jpg)center;
+  background-size: cover;
+  height: vw;
+}
+
+
+/* Show Button */
+#show-info{
+  position: fixed;
+  top: 30%;
+  background: white;
+  border: none;
+  padding: 10px;
+}
+
+
+/* KEYS */
 
 .keys {
   display: flex;
@@ -18,7 +72,7 @@ body,html {
 }
 
 .key {
-  border: .4rem solid black;
+  border: .4rem solid #fff;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
