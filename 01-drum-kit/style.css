@@ -12,14 +12,27 @@ body,html {
 
 /* PANEL STYLES  */
 .left-panel{
-  width: 40%;
+  width: 25%;
   height: vh;
   display: none;
   visibility: hidden;
-  padding: 20px 1rem 0 1rem;
-  background-color: rgba(43, 81, 105, 0.86);
+  background-color: #fff;
   color: #fff;
-  transition: all 2s linear;
+  /*transition: all 2s linear;*/
+}
+
+.left-panel .title{
+  background-color: rgba(43, 81, 105, 0.86);
+}
+
+.left-panel .title {
+  padding: 1rem;
+  
+}
+.left-panel .concepts,
+.left-panel h2{
+  padding: 0 1rem;
+  color: rgba(43, 81, 105, 0.86);
 }
 
 .left-panel a{
@@ -38,7 +51,8 @@ body,html {
   border: 1px #fff solid;
   border-radius: 5px;  
   color: white;
-  background-color: rgba(18, 97, 132, 0.33);
+  
+  background-color: rgba(18, 97, 132, 0.74);
   
 }
 
@@ -59,13 +73,18 @@ body,html {
 #show-info{
   position: fixed;
   top: 30%;
-  background: red;
+  background: #ff000078;
   border: none;
   padding: 10px;
   color: #fff;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid red;
   cursor: pointer;
   transition: display 2s;
+}
+
+#show-info:hover,
+#show-info:active{
+  background-color: red;
 }
 
 
