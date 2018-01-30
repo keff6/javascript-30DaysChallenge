@@ -15,9 +15,11 @@ body,html {
   width: 40%;
   height: vh;
   display: none;
+  visibility: hidden;
   padding: 20px 1rem 0 1rem;
-  background-color: #1f437c;
+  background-color: rgba(43, 81, 105, 0.86);
   color: #fff;
+  transition: all 2s linear;
 }
 
 .left-panel a{
@@ -28,24 +30,26 @@ body,html {
   display: block;
   font-size: 17px;
   color: black;
-  background-color: #b8d4f5;
+  background-color: #fff;
 }
 
 .left-panel a:hover,
 .left-panel a:active{
-  border: 1px grey solid;
+  border: 1px #fff solid;
   border-radius: 5px;  
   color: white;
   background-color: rgba(18, 97, 132, 0.33);
+  
 }
 
 .show{
   display: inline;
+  visibility: visible;
 }
 
 .main-panel{
   width: 100%;
-  background: url(http://www.4usky.com/data/out/29/164244963-drums-wallpapers.jpg)center;
+  background: url('./img/drums.jpg')center;
   background-size: cover;
   height: vw;
 }
@@ -55,9 +59,13 @@ body,html {
 #show-info{
   position: fixed;
   top: 30%;
-  background: white;
+  background: red;
   border: none;
   padding: 10px;
+  color: #fff;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+  transition: display 2s;
 }
 
 
