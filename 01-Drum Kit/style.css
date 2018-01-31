@@ -10,85 +10,14 @@ body,html {
   display: flex;
 }
 
-/* PANEL STYLES  */
-.left-panel{
-  width: 25%;
-  height: vh;
-  display: none;
-  visibility: hidden;
-  background-color: #fff;
-  color: #fff;
-  /*transition: all 2s linear;*/
-}
-
-.left-panel .title{
-  background-color: rgba(43, 81, 105, 0.86);
-}
-
-.left-panel .title {
-  padding: 1rem;
-  
-}
-.left-panel .concepts,
-.left-panel h2{
-  padding: 0 1rem;
-  color: rgba(43, 81, 105, 0.86);
-}
-
-.left-panel a{
-  border: 1px grey solid;
-  border-radius: 5px;
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-  font-size: 17px;
-  color: black;
-  background-color: #fff;
-}
-
-.left-panel a:hover,
-.left-panel a:active{
-  border: 1px #fff solid;
-  border-radius: 5px;  
-  color: white;
-  
-  background-color: rgba(18, 97, 132, 0.74);
-  
-}
-
-.show{
-  display: inline;
-  visibility: visible;
-}
-
 .main-panel{
-  width: 100%;
   background: url('./img/drums.jpg')center;
-  background-size: cover;
-  height: vw;
+  background-size: cover;  
 }
 
-
-/* Show Button */
-#show-info{
-  position: fixed;
-  top: 30%;
-  background: #ff000078;
-  border: none;
-  padding: 10px;
-  color: #fff;
-  border-bottom: 1px solid red;
-  cursor: pointer;
-  transition: display 2s;
-}
-
-#show-info:hover,
-#show-info:active{
-  background-color: red;
-}
-
-
-/* KEYS */
+/* -------------------------------------
+                  KEYS 
+----------------------------------------*/
 
 .keys {
   display: flex;

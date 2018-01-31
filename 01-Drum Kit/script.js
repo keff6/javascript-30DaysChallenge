@@ -17,15 +17,3 @@ const keys = document.querySelectorAll(".key");
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown',playSound);
 
-var show =  document.getElementById('show-info');
-var left = document.querySelector('.left-panel');
-
-show.addEventListener('click',function(){
-  left.classList.toggle('show');
-  
-  if(this.innerHTML === "More"){
-    this.innerHTML = "Less";
-  }else{
-    this.innerHTML = "More";
-  }
-});
