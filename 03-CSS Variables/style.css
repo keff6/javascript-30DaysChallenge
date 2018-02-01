@@ -1,12 +1,18 @@
 /* GENERAL STYLES */
+html {
+  font-size: 10px;  
+}
 
 body {
-  text-align: center;
-  background: #193549;
+  background: #000;
   color: white;
+  display: flex;
+  flex:1;
   font-family: 'helvetica neue', sans-serif;
   font-weight: 100;
-  font-size: 50px;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
 }
 .controls {
   margin-bottom: 50px;
@@ -15,6 +21,15 @@ input {
   width:100px;
 }
 
+.main-panel{
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+.main-panel div:first-child{
+  text-align: left;
+}
 /*-----------------------------------------
              CSS VARIABLES 
 -------------------------------------------*/
@@ -23,10 +38,12 @@ input {
 :root{
   --base: #ffc600;
   --spacing: 10px;
-  --blur: 10px;
+  --blur: 0px;
 }
 
 img{
+  height: 400px;
+  margin:0 auto;
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
